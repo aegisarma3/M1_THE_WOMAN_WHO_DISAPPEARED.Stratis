@@ -1,0 +1,28 @@
+Author             = "Collumbus - AEGIS";
+OnLoadName         = "T.W.W.D.";
+OnLoadMission      = "Não é preciso ter olhos abertos para ver o sol, nem é preciso ter ouvidos afiados para ouvir o trovão. Para ser vitorioso você precisa ver o que não está visível. - Sun Tzu";
+loadScreen         = "signs\cia.paa";
+overviewPicture    = "signs\cia.paa";
+enableDebugConsole = 1;
+respawn            = 1;
+class Header
+{
+    gameType   = COOP;
+    minPlayers = 1;
+    maxPlayers = 12;
+};
+
+// delete the following line when the lxOPS is no more used
+#include "Editor3d\lxOPS_dlg.hpp"
+
+class CfgMusic
+{
+    tracks[]={};
+
+    class BigJack
+    {
+        name = "";
+        sound[] = {"\music\BigJack.ogg", db+0, 1.0};
+    };
+
+};
